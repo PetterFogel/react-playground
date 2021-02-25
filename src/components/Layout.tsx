@@ -1,19 +1,25 @@
 import React, { CSSProperties } from 'react';
 import Navbar from './Navbar';
-import Content from './Content';
+import ViewContainer from './viewContainer';
+import { fullScreen } from '../css';
 
 export default function Layout() {
+
+    const styles = { ...columnFlex, ...fullScreen, ...background };
+
     return (
-        <div style={layoutStyle}>
+        <div style={styles}>
             <Navbar/>
-            <Content/>
+            <ViewContainer/>
         </div>
     ); 
 }
 
-const layoutStyle: CSSProperties = {
+const columnFlex: CSSProperties = {
     display: 'flex',
-    flexDirection: 'column',
-    justifyContent: 'space-between',
-    height: '100vh'
-}
+    flexDirection: 'column'
+};
+
+const background: CSSProperties = {
+    background: 'f1f1f1'
+};

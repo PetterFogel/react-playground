@@ -4,13 +4,9 @@
     box-sizing: border-box;
 }
 
-body, body > div {
+html, body, body > div {
+    height: 100%;
+    margin: 0;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    height: 100vh;
-    width: 100%;
-
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
 }
 

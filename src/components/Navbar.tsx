@@ -9,10 +9,17 @@ export default function Navbar() {
 }
 
 const headerContainer: CSSProperties = {
-    background: '#000'
+    background: '#000',
+    height: '4rem',
+    display: 'flex',
+    alignItems: 'stretch',
+    padding: '0rem 1rem'
 }
 
 const headerTitle: CSSProperties = {
-    color: '#fff',
-    margin: '1rem'
+    fontSize: '1.5rem',
+    display: 'flex',
+    alignItems: 'center',
+    cursor: 'pointer',
+    color: '#fff'
 }

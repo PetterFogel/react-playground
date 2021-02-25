@@ -8,9 +8,4 @@ export default function App() {
             <Layout/>
         </div>
     ); 
-}
-
-// const mainStyle: CSSProperties = {
-//     // width: '100%',
-//     // height: '100vh'
-// }
+} 
