@@ -1,4 +1,5 @@
 import React, { CSSProperties } from 'react';
+import { Link } from 'react-router-dom';
 import { centeredContent } from '../css';
 
 interface Props {
@@ -7,12 +8,12 @@ interface Props {
 
 export default function NavigationItem(props: Props) {
     const imageSrc = `../assets/${props.id}.jpg`;
-
+    const toUrl = `/${props.id}`;
     return (
-        <div style={{ ...gridItem, ...centeredContent }}>
+        <Link to={toUrl} style={{ ...gridItem, ...centeredContent }}>
             <img src={imageSrc} style={fullscreen} />
             <h2 style={{ ...centeredAbsolute, ...appearance}}>{props.id}</h2>
-        </div>
+        </Link>
     );
 }
 
