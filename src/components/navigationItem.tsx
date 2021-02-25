@@ -5,8 +5,7 @@ interface Props {
     id: string;
 }
 
-export default function SectionItem(props: Props) {
-
+export default function NavigationItem(props: Props) {
     const imageSrc = `../assets/${props.id}.jpg`;
 
     return (

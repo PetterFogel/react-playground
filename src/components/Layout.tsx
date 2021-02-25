@@ -21,5 +21,5 @@ const columnFlex: CSSProperties = {
 };
 
 const background: CSSProperties = {
-    background: 'f1f1f1'
+    background: '#333'
 };

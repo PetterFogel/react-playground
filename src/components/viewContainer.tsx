@@ -1,12 +1,12 @@
 import React, { CSSProperties } from 'react';
+import DetailView from './detailView';
 import MasterView from './masterView';
-// import SectionItem from './SectionItem';
 
 export default function ViewContainer() {
     return (
         <div style={container}>
-            <MasterView/>
-
+            {/* <MasterView/> */}
+            <DetailView />
         </div>
     );
 }
@@ -14,5 +14,5 @@ export default function ViewContainer() {
 const container: CSSProperties = {
     display: 'flex',
     flexDirection: 'column',
-    flex: 1,
+    flex: 1
 }
