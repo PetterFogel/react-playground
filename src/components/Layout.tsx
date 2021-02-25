@@ -1,6 +1,6 @@
 import React, { CSSProperties } from 'react';
-import Navbar from './header/Navbar';
-import Content from './main/Content';
+import Navbar from './Navbar';
+import Content from './Content';
 
 export default function Layout() {
     return (
